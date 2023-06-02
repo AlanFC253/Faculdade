@@ -1,0 +1,83 @@
+body{
+    width: 960px;
+    margin: 0;
+    padding: 0;
+}
+
+article{
+    margin: 30px;
+}
+aside{
+    margin: auto;
+    width: 225px;
+    height: 875px;
+    border: 1px solid;
+    float: left;
+    border-radius: 0 10px 10px 0px;
+}
+
+h1{
+    text-align: center;
+    padding: 5px;
+    padding-top: 344px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: blue;
+}
+
+h2{
+    font-size: 20px;
+}
+
+section{
+    width: 60%;
+    float: left;
+    padding-left: 20px;
+    margin: 0 10px;
+
+}
+
+#claro{
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    box-shadow: 5px 5px 5px red;
+    border-radius: 10px;
+}
+
+#oi{
+    margin-top: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(160, 160, 19);
+    box-shadow: 5px 5px 5px rgb(187, 187, 24);
+    border-radius: 10px;
+}
+
+form{
+    clear: both;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0;
+    padding: 25px;
+    border: 1px solid;
+    width: 80%;
+    border-radius: 0px 10px 0px 10px ;
+}
+
+button{
+    display:block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+footer{
+    clear: both;
+    width: 85%;
+    text-align: center;
+    padding: 1px;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 10px 10px 0 0;
+}

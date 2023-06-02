@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-14 01:28:07 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTE0OyIwMTowNDozMiAiOzI4MTI="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTE0OyIwMToyODowNyAiOzE7MjkyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="e" type="Integer" array="False" size=""/>
+            <declare name="f" type="Integer" array="False" size=""/>
+            <declare name="aux" type="Integer" array="False" size=""/>
+            <declare name="aux2" type="Integer" array="False" size=""/>
+            <output expression="&quot;asdasdasd&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="e" expression="1"/>
+            <assign variable="f" expression="1"/>
+            <assign variable="aux" expression="1"/>
+            <assign variable="aux2" expression="1"/>
+            <while expression="aux2 &lt;= n">
+                <assign variable="aux" expression="aux2"/>
+                <while expression="aux&gt;0">
+                    <assign variable="f" expression="f*aux"/>
+                    <assign variable="aux" expression="aux-1"/>
+                </while>
+                <assign variable="e" expression="e+1/f"/>
+                <assign variable="f" expression="1"/>
+                <assign variable="aux2" expression="aux2+1"/>
+            </while>
+            <output expression="e" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

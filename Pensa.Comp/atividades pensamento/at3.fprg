@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-12 10:19:47 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTEyOyIxMDoxNDoyMCAiOzI4MDg="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTEyOyIxMDoxNzo0NSAiOzI7UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA0LTIzOyIwNzowMzozOCAiO2V4ZXJjaWNpbzIuZnByZzs3MzQ5"/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTEyOyIxMDoxOTo0NyAiOzE7MjkzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="altura" type="Real" array="False" size=""/>
+            <declare name="peso" type="Real" array="False" size=""/>
+            <output expression="&quot;digite a altura&quot;" newline="True"/>
+            <input variable="altura"/>
+            <output expression="&quot;digite o peso&quot;" newline="True"/>
+            <input variable="peso"/>
+            <if expression="altura&lt; 1.20">
+                <then>
+                    <if expression="peso &#8804; 60">
+                        <then>
+                            <output expression="&quot;Classifica&#231;&#227;o sera A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="peso&gt;60 and peso&#8804;90">
+                                <then>
+                                    <output expression="&quot;Classifica&#231;&#227;o sera D&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;classifica&#231;&#227;o sera G&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="altura   &#8805;  1.20 and altura &#8804; 1.70">
+                        <then>
+                            <if expression="peso &#8804; 60">
+                                <then>
+                                    <output expression="&quot;Classifica&#231;&#227;o sera B&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="peso&gt;60 and peso&#8804;90">
+                                        <then>
+                                            <output expression="&quot;Classifica&#231;&#227;o sera E&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Classifica&#231;&#227;o sera H&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="peso &#8804; 60">
+                                <then>
+                                    <output expression="&quot;classifica&#231;&#227;o sera C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="peso&gt;60 and peso&#8804;90">
+                                        <then>
+                                            <output expression="&quot;Classifica&#231;&#227;o sera F&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Classifica&#231;&#227;o sera I&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

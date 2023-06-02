@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+body{
+    background-color: rgb(233, 223, 212);
+}
+
+header{
+    background-color: rgb(24, 120, 209);
+    padding: 15px;
+    color: whitesmoke;
+    
+}
+
+p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+figure{
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border:solid 1px ;
+    padding: 10px;
+}
+.dog{
+    padding: auto;
+    width: 300px;
+    margin: 0 auto;
+}
+
+footer{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(17, 121, 90);
+    text-align: center;
+}

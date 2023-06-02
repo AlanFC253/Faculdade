@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-12 10:14:17 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTEyOyIxMDowMjo0MSAiOzI4MDg="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTEyOyIxMDoxNDoxNyAiOzE7MjkyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a idade do nadador para mostrar sua categoria: &quot;" newline="True"/>
+            <input variable="idade"/>
+            <if expression="idade&lt;5">
+                <then>
+                    <output expression="&quot;Muito novo, n&#227;o existe uma categoria&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="idade&gt;=5 and idade&lt;=7">
+                        <then>
+                            <output expression="&quot;Infantil&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="idade&gt;=8 and idade&lt;=10">
+                                <then>
+                                    <output expression="&quot;Juvenil&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="idade&gt;=11 and idade&lt;=15">
+                                        <then>
+                                            <output expression="&quot;Adolecente&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="idade&gt;=16 and idade&lt;=30">
+                                                <then>
+                                                    <output expression="&quot;adulto&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="idade&gt;30">
+                                                        <then>
+                                                            <output expression="&quot;Senior&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Senior&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

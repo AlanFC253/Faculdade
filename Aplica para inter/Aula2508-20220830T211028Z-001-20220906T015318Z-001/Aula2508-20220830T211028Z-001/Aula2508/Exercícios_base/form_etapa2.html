@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Form 2</title>
+</head>
+<body>
+   
+    <header>
+        <h1>
+            Sign up for AWS
+        </h1>
+    </header>
+   <main>
+        <form>
+
+            <h3>Contact Information</h3>
+
+            <section>
+                <label class="titulo" for="radiotxt" >How do you plan to use Aws</label><br>
+                <input type="radio" id="Business" name="plan" value="BUSINESS">
+                <label class="radio" for="Business">Business - for your work, school, or organization</label><br>
+                <input type="radio" id="Personal" name="plan" value="PERSONAL">
+                <label class="radio" for="Personal">Personal - for you own projects</label><br>
+            </section>
+
+            <p>
+              Who should we contact about this account?
+            </p>
+
+            <section>
+                <label class="titulo" for="name">Full Name</label><br>
+                <input type="text" id="name" name="texttxt">
+            </section>
+
+            <section>
+                <label class="titulo" for="phone">Phone Number</label><br>
+                <label class="explicacao" for="phone">Enter your country code and your phone Number</label><br>
+                <input type="tel" id="phone" name="teltxt" placeholder="+1 222-333-4444">
+            </section>
+
+            <section>
+                <label class="titulo" for="region">Country or Region</label><br>
+                <select id="region" name="selecttxt">
+                    <option value="United States" selected>United States</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Russia soviet union">Russia soviet union</option>
+                </select>
+            </section>
+
+            <section>
+                <label class="titulo" for="address">Address</label><br>
+                <input type="text" id="address"><br>
+                <input type="text" placeholder="Apartment, suite, unit, bullding, floor, etc.">
+            </section>
+
+            <section>
+                <label class="titulo" for="city">City</label><br>
+                <input type="text" id="city" name="texttxt">
+            </section>
+            
+            <section>
+                <label class="titulo" for="state">State, Province, or Region</label><br>
+                <input type="text" id="state" name="texttxt">
+            </section>
+
+            <section>
+                <label class="titulo" for="portal">Portal code</label><br>
+                <input type="text" id="portal" name="texttxt">
+            </section>
+
+            <section>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">I have read and agree to the terms of the <a href="#">AWS Customer Agreement</a></label>
+            </section>
+
+        </form>
+            <footer class="prosseguir">
+                <h3 class="etapas">Continue (step 2 of 3)</h3>
+                <a class="esquerda" href="form_etapa1.html"><img src="imagens/setaEsqueda.fw.png" alt=""></a>
+                <a class="direita" href="form_etapa3.html"><img src="imagens/seta 6.fw.png" alt="seta"></a>
+            </footer>
+   </main>
+</body>
+</html>

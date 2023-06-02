@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    width: 300px;
+    margin: auto;
+}
+
+section{
+    margin-top: 15px;
+    font-style: unset;
+}
+section .titulo{
+    font-size: 20px;       
+}
+
+section .explicacao{
+    font-size: 15;
+    color: darkgrey;
+}
+
+h3{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+input,#region{
+    width: 100%;
+    height:30px;
+    border: solid darkgrey 1px;
+    border-radius: 4px;
+}
+
+.etapas{
+    text-align: center;
+    background-color: rgb(211, 141, 11);
+    border-radius: 4px;
+    border: solid orange 1px ;
+    padding: 5px;
+    color: aliceblue;
+    margin-top: 15px;
+}
+
+.prosseguir{
+    width: 100%;
+
+}
+picture{    
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+img{
+    width: 50px;
+}
+
+a img{
+    width: 60px;
+}
+
+.direita{
+display: grid;
+float: right;
+}
+
+#Business,#Personal,#checkbox{
+   height: 15px;
+   display: inline-block;
+   width: auto;
+   padding: 5px;
+}
+
+p{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

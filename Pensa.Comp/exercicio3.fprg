@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-23 08:09:16 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA0LTIzOyIwNzo1NToyMyAiOzI4MjM="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA0LTIzOyIwODowOToxNiAiOzE7MjkzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2" type="Real" array="False" size=""/>
+            <declare name="sinal" type="String" array="False" size=""/>
+            <output expression="&quot;Primeiro numero:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Segundo numero:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Tipo de opera&#231;&#227;o:&quot;" newline="True"/>
+            <input variable="sinal"/>
+            <if expression="n2=0 and sinal=&quot;/&quot;">
+                <then>
+                    <output expression="&quot;N&#227;o se pode dividir por 0&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sinal = &quot;*&quot;">
+                        <then>
+                            <output expression="n1 &quot;*&quot; n2 = ( n1 * n2 )" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="sinal = &quot;+&quot;">
+                                <then>
+                                    <output expression="&quot;n1 + n2 =&quot; n1+n2" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;n1 - n2 =&quot; n1-n2" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

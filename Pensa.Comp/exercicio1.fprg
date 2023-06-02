@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-23 07:01:39 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA0LTIzOyIwNjozMzo0NiAiOzI4MjM="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA0LTIzOyIwNzowMTozOSAiOzI7MjkzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="codigo, salario" type="Real" array="False" size=""/>
+            <output expression="Entre com o codigo do cargo" newline="True"/>
+            <input variable="codigo"/>
+            <output expression=":Entre com o salario" newline="True"/>
+            <if expression="codigo=1">
+                <then>
+                    <assign variable="salario" expression="salario+(salario+100/50)"/>
+                    <output expression="&quot;Seu novo cargo sera Secretario e o aumento sera de 50%, seu salario subiu para:&quot; salario" newline="False"/>
+                </then>
+                <else>
+                    <if expression="codigo=2">
+                        <then>
+                            <assign variable="salario" expression="salario+(salario+100/35)"/>
+                            <output expression="&quot;Seu novo cargo sera Caixa e o aumento sera de 35%, seu salario subiu para:&quot; salario" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="codigo=3">
+                                <then>
+                                    <assign variable="salario" expression="salario+(salario+100/20)"/>
+                                    <output expression="&quot;Seu novo cargo sera Gerente e o aumento sera de 20%, seu salario subiu para:&quot; salario" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="codigo=4">
+                                        <then>
+                                            <assign variable="salario" expression="salario+(salario+100/10)"/>
+                                            <output expression="&quot;Seu novo cargo sera Diretor e o aumento sera de 10%, seu salario subiu para:&quot; salario" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="N&#227;o tem como subir mas de cargo" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

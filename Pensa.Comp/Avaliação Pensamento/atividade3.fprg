@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-14 01:40:48 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTE0OyIwMTozMDoxMSAiOzI4MDg="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTE0OyIwMTo0MDo0OCAiOzE7MjkyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <for variable="num1" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Tabuada do: &quot;&amp; num1" newline="True"/>
+                <for variable="num2" start="1" end="10" direction="inc" step="1">
+                    <output expression="num1 &amp;&quot;*&quot;&amp; num2 &amp;&quot;=&quot;&amp; num1*num2" newline="True"/>
+                </for>
+                <output expression="&quot;---------------------------------------------&quot;" newline="True"/>
+                <assign variable="num2" expression="0"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

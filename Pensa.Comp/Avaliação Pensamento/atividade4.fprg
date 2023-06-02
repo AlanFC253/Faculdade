@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-14 02:58:11 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTE0OyIwMTo0MDo1MCAiOzI4MTI="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTE0OyIwMjo1ODoxMSAiOzE7MjkyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor" type="Integer" array="False" size=""/>
+            <declare name="cedula" type="Integer" array="False" size=""/>
+            <assign variable="cedula" expression="0"/>
+            <declare name="atual" type="Integer" array="False" size=""/>
+            <assign variable="atual" expression="50"/>
+            <declare name="apagar" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre com o valor: &quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="apagar" expression="valor"/>
+            <while expression="true">
+                <if expression="atual&lt;=apagar">
+                    <then>
+                        <assign variable="apagar" expression="apagar-atual"/>
+                        <assign variable="cedula" expression="cedula+1"/>
+                    </then>
+                    <else>
+                        <output expression="cedula &amp;&quot; cedulas(s) de R$ &quot;&amp; atual" newline="True"/>
+                        <if expression="apagar==0">
+                            <then>
+                                <breakpoint/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="atual == 50">
+                            <then>
+                                <assign variable="atual" expression="20"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="atual == 20">
+                            <then>
+                                <assign variable="atual" expression="10"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="atual == 20">
+                            <then>
+                                <assign variable="atual" expression="5"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="atual == 5">
+                            <then>
+                                <assign variable="atual" expression="1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="cedula" expression="0"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

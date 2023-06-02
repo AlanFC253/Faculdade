@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-13 12:00:56 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTEyOyIxMTo1MDo0NCAiOzI4MTU="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTEzOyIxMjowMDo1NiAiOzE7MjkyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="aux" type="Integer" array="False" size=""/>
+            <assign variable="aux" expression="0"/>
+            <output expression="&quot;Qual numero voce vai ve a tabuada: &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&gt;0 and n&lt;11">
+                <then>
+                    <while expression="aux&lt;=10">
+                        <output expression="n&amp;&quot;*&quot;&amp;aux&amp;&quot;=&quot;&amp;n*aux" newline="True"/>
+                        <assign variable="aux" expression="aux+1"/>
+                    </while>
+                </then>
+                <else>
+                    <output expression="&quot;0 &#233; invalido&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

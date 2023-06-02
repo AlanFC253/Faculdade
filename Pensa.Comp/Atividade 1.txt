@@ -1,0 +1,117 @@
+1 - Faça um algoritmo que receba quatro notas de um aluno, calcule e mostre a média dessas notas. :
+
+Algoritmo MediaNotas
+real n1,n2,n3,n4,resultado
+    inicio
+        escreva("Entre com a primeira nota")
+        leia (n1)
+        escreva("Entre com a primeira nota")
+        leia (n2)
+        escreva("Entre com a primeira nota")
+        leia (n3)
+        escreva("Entre com a primeira nota")
+        leia (n4)
+        resultado <- (n1+n2+n3+n4)/4
+        escreva("A media sera :"+resultado)
+    fim
+_________________________________________________________________________________________________________________________________
+
+2 - Faça um algoritmo que leia a média e dê a mensagem se o aluno está aprovado ou reprovado, considerando que a média para aprovação é maior ou igual a 7. :
+
+Algoritmo aprovaçãoOuReprovação
+real media
+    inicio
+        escreva("Qual foi sua media?")
+        leia(media)
+        se media >= 7:
+            escreva("Aprovado")
+        senão:
+            escreva("Reprovado")
+    fim
+
+_________________________________________________________________________________________________________________________________
+
+3 - Faça um algoritmo que receba o preço de um produto, calcule e mostre o novo preço sabendo se que este produto sofreu um desconto de 10%. :
+
+Algoritmo descontoDeProduto
+real produto, novopreço
+    inicio
+        escreva("Qual o preço do produto?")
+        leia(produto)
+        novopreço -> produto-(produto*10/100)
+        escreva("O novo preço sera: "+novopreço)
+    fim
+
+_________________________________________________________________________________________________________________________________
+
+4 - Faça um algoritmo que receba o peso de uma pessoa, possuindo dois módulos para calcular e mostrar:
+    a)O novo peso se a pessoa engordar 15% sobre o peso digitado;
+    b)O novo peso se a pessoa emagrecer 20% sobre o peso digitado.
+
+Algoritmo peso
+real peso  
+    inicio
+        escreva ("Qual seu peso? ")
+        leia(peso)
+        engorda(peso)
+        emagrece(peso)
+    fim
+
+    void  engorda(real valor)
+    real novopeso
+        novopeso-> peso+(peso*15/100)
+        escreva("Seu novo preço se engorda 15% sera: "+novopeso)
+    fim
+
+    void engorda(real valor)
+    real novopeso
+         novopeso-> peso-(peso*20/100)
+         escreva("Seu novo preço se engorda 20% sera: "+novopeso)
+    fim
+
+_________________________________________________________________________________________________________________________________
+
+5 -  Faça um algoritmo que receba o ano de nascimento de uma pessoa e o ano atual, e por meio de mádulos calcule e mostre:
+    a) a idade da pessoa em anos;
+    b) a idade da pessoa em meses;
+    c) a idade da pessoa em dias;
+    d) a idade da pessoa em semanas;
+
+Algoritmo idade
+inteiro anoDeNascimento,anoAtual
+    inicio
+        escreva("Qual seu ano de nascimento?")
+        leia(anoDeNascimento)
+        escreva("E qual e o ano atual?")
+        leia(anoAtual)
+        idadeEmANos(anoDeNascimento,anoAtual)
+        idadeEmMeses(anoDeNascimento,anoAtual)
+        idadeEmDias(anoDeNascimento,anoAtual)
+        idadeEmSemanas(anoDeNascimento,anoAtual)
+    fim
+
+    void idadeEmANos(inteiro nascimento, inteiro atual)
+        inteiro resultado
+        resultado=atual-nascimento
+        escreva("Sua idade em anos é:"+resultado)
+        retorne(resultado)
+    fim
+
+    void idadeEmMeses(inteiro anos)
+        inteiro resultado
+        resultado=idadeEmANos()*12
+        escreva("Sua idade em meses é:"+resultado)
+    fim
+
+    void idadeEmDias(inteiro nascimento, inteiro atual)
+        inteiro resultado
+        resultado=(atual-nascimento)*365
+        escreva("Sua idade em anos é:"+resultado)
+    fim
+
+    void idadeEmSemanas(inteiro nascimento, inteiro atual)
+        inteiro resultado
+        resultado=(atual-nascimento)*(12/4)
+        escreva("Sua idade em anos é:"+resultado)
+    fim
+

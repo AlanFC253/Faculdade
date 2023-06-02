@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pichau"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-12 09:59:37 "/>
+        <attribute name="created" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTEyOyIwOTozNDowNiAiOzI4MjI="/>
+        <attribute name="edited" value="UGljaGF1O0RFU0tUT1AtRlY1UTQ2MjsyMDIyLTA1LTEyOyIwOTo1OTozNyAiOzE7Mjk0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Real" array="False" size=""/>
+            <declare name="n2" type="Real" array="False" size=""/>
+            <declare name="n3" type="Real" array="False" size=""/>
+            <declare name="nf" type="Real" array="False" size=""/>
+            <declare name="np" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre com a primeira nota: &quot;" newline="False"/>
+            <input variable="n1"/>
+            <output expression="&quot;Entre com a segunda nota: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Entre com a terceira nota: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="nf" expression="(n1+n2+n3)/3"/>
+            <if expression="nf&lt;3">
+                <then>
+                    <output expression="&quot;REPROVADO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="nf&gt;3 and nf&lt;=7">
+                        <then>
+                            <output expression="&quot;RECUPERA&#199;&#194;O&quot;" newline="True"/>
+                            <assign variable="np" expression="6-nf"/>
+                            <output expression="&quot;precisa de &quot;&amp; np &amp;&quot; para ser aprovado&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;APROVADO&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
