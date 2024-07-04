@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylestyle.css">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h1>Formulario de Contato</h1>
+            <h3>Preencha todos os campos</h3>
+            <hr>
+            <section>
+                <label for="nometxt">Nome:</label>
+                <input type="text" name="nometxt" id="nometxt" placeholder="Nome Completo">
+            </section>
+            <section>
+                <label for="emailtxt">Email:</label>
+                <input type="email" name="emailtxt" id="emailtxt" placeholder="E-mail Válido">
+            </section>
+            <section>
+                <label for="selecttxt">Assunto:</label>
+                <select name="selecttxt" id="selecttxt">
+                    <option value=""></option>
+                    <option value="Reclamação">Reclamação</option>
+                    <option value="Elogios">Elogios</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </section>
+            <section>
+                <label id="diferentao" for="mensagemtxt">Mensagem:</label>
+                <textarea id="mensagemtxt" name=mensagemtxt placeholder="Sua Mensagem"></textarea>
+            </section>
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

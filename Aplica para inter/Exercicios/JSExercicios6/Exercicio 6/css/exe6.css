@@ -1,0 +1,15 @@
+table,tr,th,td{
+    border: solid 1px black;
+}
+
+.verde{
+    color: green;
+}
+
+.amarelo{
+    color: yellow;
+}
+
+.vermelho{
+    color: red;
+}

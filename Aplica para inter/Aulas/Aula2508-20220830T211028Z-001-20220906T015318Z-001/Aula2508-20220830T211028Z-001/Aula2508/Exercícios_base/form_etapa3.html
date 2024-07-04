@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Form 3</title>
+</head>
+<body>
+   
+    <header>
+        <h1>
+            Sign up for AWS
+        </h1>
+    </header>
+   <main>
+        <form>
+
+            <h3>Billing Information</h3>
+
+            <section>
+                <label class="titulo" for="card">Credit card number</label>
+                <input type="text" id="card" name="cardtxt">
+                <picture>
+                    <img src="imagens/Old_Visa_Logo.svg.png" alt="visa">
+                    <img src="imagens/Mastercard_2019_logo.svg.png" alt="mastercard">
+                </picture><br>
+            <label class="explicacao" for="card">AWS accepts most major credit cards. To learn more about payment options, review or <a href="#">FAQ</a></label>
+            </section>
+            
+            <section>
+                <label class="titulo" for="data">Expiration date</label>
+                <input type="date" id="data">
+            </section>
+
+            <section>
+                <label class="titulo" for="cardname">Cardholder's name</label>
+                <input type="text" id="cardname">
+            </section>
+
+            <section id="sla">
+                <label class="titulo" for="billing">Billing  address</label><br>
+                <input type="radio" name="radio" id="billing" value="usemy">
+                <label for="billing">Use contact address</label><br>
+                <label class="explicacao" for="billing">5 Stanford Road <br>Cape Town Western Cape 7700<br>ZA</label><br>
+                <input type="radio" name="Usenew" id="usernew" value="usernew">
+                <label class="titulo" for="usernew">Use a new address</label>
+            </section>
+
+        </form>
+
+        <footer class="prosseguir">
+            <h3 class="etapas">Continue (step 3 of 3)</h3>
+            <a class="esquerda" href="form_etapa2.html"><img src="imagens/setaEsqueda.fw.png" alt=""></a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+table{
+    color: #CCCCCC;
+    background: #CCCCCC;
+}
+
+#header_table{
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #000033;
+}
+
+td {
+font-size: 14px;
+font-weight: 700;
+background: #000066;
+color: white;
+font-family: arial;
+
+}

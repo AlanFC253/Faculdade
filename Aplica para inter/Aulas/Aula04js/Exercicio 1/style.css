@@ -1,0 +1,40 @@
+body{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    border-radius: 100px;
+    width: 500px;
+    text-align: justify;
+    border: red 5px solid;
+    box-shadow:5px 5px 8px rgb(241, 241, 244), 10px 10px 8px #5f5c5c;
+    background: linear-gradient(white,rgb(176, 176, 176));
+}
+
+p{
+    margin: 50px;
+}
+
+.primeiro{
+    color:rgb(9, 205, 9);
+    font-weight: bolder;
+    background-color: black;
+    text-decoration: line-through;
+}
+.segundo{
+    background-color: red;
+    color: white;
+}
+
+.terceiro{
+    font-size: 18pt;
+    font-weight: bolder;
+}
+
+.quarto{
+    color: red;
+    font-weight: bolder;
+    text-decoration:underline;
+}

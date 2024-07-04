@@ -1,0 +1,91 @@
+*{
+    text-decoration: none;
+}
+
+html{
+    background-image: url(../images/pattern.png);
+}
+
+body{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header{
+    margin: 10px;
+}
+
+.colorA{
+    color: rgb(32, 33, 34);
+    font-size: 55px;
+}
+
+.logo_colour{
+    color: white;
+    font-size: 55px;
+}
+h2{
+    font-size: 30px;
+}
+
+
+nav{
+    width: 100%;
+    background-color: rgb(31, 33, 34);
+    display: inline-block;
+    margin: 0px 10 0px 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+nav a{
+    border-left:1px solid rgba(255, 255, 255, 0.918) ;
+}
+
+#site_content{
+    background-color: azure;
+    display: flex;
+}
+
+#content{
+    margin-left: 20px;
+}
+
+aside{
+    margin: 50px;
+}
+
+.sidebar{
+    width: 230px;
+    background-color: rgba(55, 110, 110, 0.863);
+    border-radius: 10px;
+    padding: 50px;
+    padding-top: 0;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-top: 0;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(31, 33, 34);
+    color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+li{
+    display: block;
+    padding: 5px;
+}
+
+h3{
+    font-size: 30px;
+    color: beige;
+}
+h4{
+    color: brown;
+}
+
+h5{
+    color: blue;
+}

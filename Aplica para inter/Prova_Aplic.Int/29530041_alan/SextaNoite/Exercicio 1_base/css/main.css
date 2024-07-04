@@ -1,0 +1,30 @@
+*{
+    text-align: center;
+}
+body{
+    width: 100%;
+    margin: auto;
+    padding:0
+}
+
+img{
+    box-shadow: 1px 1px 5px 5px black;
+    border-radius: 450px;
+    width: 300px;
+}
+h1{
+    text-shadow:1px 1px 2px red;
+    color: black;
+    align-items: center;
+}
+
+ol{
+    width: 100px;
+    margin: auto;
+}
+
+footer{
+    margin: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}

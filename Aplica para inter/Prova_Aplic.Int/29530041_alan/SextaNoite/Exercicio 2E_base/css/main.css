@@ -1,0 +1,85 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+input,textarea{
+	outline: none;
+	border: none;
+}
+
+button {
+  /* retire a borda do elemento */ 	  
+  border: none;
+}
+
+body {
+  padding: 15px;
+  /* insira o gradiente de fundo usando as cores #00ff3b, #ffe100, #0042f7*/ 
+  background:linear-gradient(#00ff3b, #ffe100, #0042f7)
+}
+
+form {
+  /* largura da caixa deve ser 400px */
+  width: 400px;
+  /* cor de fundo branco */
+  background-color: #fff;
+  /* arredondar os cantos superiores esquerdo e inferior esquerdo 150px, demais 0px */
+  border-radius:150px 0px 0px 150px  ;
+  /* centralizar a caixa */
+  margin: 0 auto;
+  /* espaçamento do conteúdo para as bordas de 30px */
+  padding: 30px;
+  /* adicionar sombra na caixa do formulário */
+  box-shadow:5px 5px 5px black;
+}
+
+.title {  
+  text-align: center;
+  padding-bottom: 44px;
+}
+
+.entrada {
+  padding: 0 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  background: #ffeb00;  
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+  /* altura de 30px para o campo input */
+  height: 30px;
+  /* canto arredondado de 25px */  
+  border-radius: 25px;
+}
+
+.campotexto {
+  /* altura de 100px para o campo textarea */  
+  height: 100px;
+}
+
+.btn {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000;  
+  padding: 0 25px;
+  /* largura de 193px para o botão */
+  width: 193px;
+  /* altura de 50px para o botão */
+  height: 50px;
+  /* canto arredondado de 25px */
+  border-radius: 25px;
+  /* centralizar a caixa */
+  margin: 0 auto;
+  /* configurar a visualização para bloco */
+  display: block;
+  /* cor de fundo #ffbe0d */
+  background-color:#ffbe0d ;
+}
+
+.btn:hover {
+  background: #333333;
+    color: #fff;
+    cursor: pointer;
+}
