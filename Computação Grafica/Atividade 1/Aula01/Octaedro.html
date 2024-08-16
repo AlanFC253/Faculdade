@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Aula01 - Demo</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+		<script src="js/three.js"></script>
+		<script src="js/controls/OrbitControls.js"></script>
+		<script>
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+			var controls = new THREE.OrbitControls( camera, renderer.domElement );
+			//--------Inserir o código a partir daqui-------
+			
+			const axesHelper = new THREE.AxesHelper(5);
+			scene.add(axesHelper);
+
+			const v = [];
+			// Definindo os vértices do octaedro
+			const v0 = [1.0, 0.0, 0.0];   // Vértice direito
+			const v1 = [-1.0, 0.0, 0.0];  // Vértice esquerdo
+			const v2 = [0.0, 1.0, 0.0];   // Vértice superior
+			const v3 = [0.0, -1.0, 0.0];  // Vértice inferior
+			const v4 = [0.0, 0.0, 1.0];   // Vértice frontal
+			const v5 = [0.0, 0.0, -1.0];  // Vértice traseiro
+
+			// Criando as faces do octaedro (triângulos)
+			const vertices =  new Float32Array(	v.concat(
+				// Face frontal superior
+				v0,v2,v4,
+				v2,v1,v4,
+				// Face traseira superior
+				v0,v2,v5,
+				v2,v1,v5,
+				// Face frontal inferior
+				v0,v3,v4,
+				v3,v1,v4,
+				// Face traseira inferior
+				v0,v3,v5,
+				v3,v1,v5
+				));
+				
+			const geometry = new THREE.BufferGeometry();
+			geometry.setAttribute('position',new THREE.BufferAttribute(vertices,3));
+
+			const material = new THREE.MeshBasicMaterial({ color: 0xFFFF00, side: THREE.DoubleSide });
+			const octahedron = new THREE.Mesh(geometry, material);
+			scene.add(octahedron);
+
+			//-----------------------------------------------
+			camera.position.y = 3;
+			camera.position.z = 3;
+			var animate = function () {
+				requestAnimationFrame( animate );
+				controls.update();
+
+				renderer.render( scene, camera );
+			};
+			animate();
+		</script>
+	</body>
+</html>
